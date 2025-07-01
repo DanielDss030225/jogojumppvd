@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heróis da Proteção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>🚁 Heróis da Proteção 🚁</h1>
+            <div class="score-container">
+                <div class="score">Pontuação: <span id="score">0</span></div>
+                <div class="high-score">Recorde: <span id="highScore">0</span></div>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+        <div class="controls">
+            <div class="control-info">
+                <p>🎮 Use as setas ← → ou toque nas laterais da tela para mover</p>
+            </div>
+            <div class="game-buttons">
+                <button id="startButton" class="btn-primary">🚀 Começar Jogo</button>
+                <button id="restartButton" class="btn-secondary" style="display: none;">🔄 Jogar Novamente</button>
+            </div>
+        </div>
+
+        <div class="educational-panel" id="educationalPanel" style="display: none;">
+            <div class="panel-content">
+                <h3>💡 Mensagem Educativa</h3>
+                <p id="educationalMessage"></p>
+                <div class="important-info">
+                    <p><strong>📞 Disque 180</strong> - Central de Atendimento à Mulher</p>
+                    <p><strong>🏠 Construindo lares seguros e cheios de amor</strong></p>
+                </div>
+                <button id="closePanel" class="btn-primary">Continuar</button>
+            </div>
+        </div>
+
+        <div class="game-info">
+            <div class="legend">
+                <h4>🎯 Elementos do Jogo:</h4>
+                <div class="legend-items">
+                    <div class="legend-item">
+                        <span class="legend-icon">❤️</span>
+                        <span>Plataforma de Impulso</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">🛡️</span>
+                        <span>Plataforma de Proteção</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">⭐</span>
+                        <span>Estrela da Esperança (+10 pontos)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">☁️</span>
+                        <span>Nuvem de Tempestade (evite!)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="keywords">
+                    <span class="keyword">AMOR</span>
+                    <span class="keyword">RESPEITO</span>
+                    <span class="keyword">PAZ</span>
+                    <span class="keyword">DIÁLOGO</span>
+                    <span class="keyword">APOIO</span>
+                    <span class="keyword">PROTEÇÃO</span>
+                </div>
+                <p>🏠 Juntos construímos um mundo mais seguro e amoroso 🏠</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
